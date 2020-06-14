@@ -5,8 +5,8 @@ class Api::V1::ToDosController < ApplicationController
   end
 
   def destroy
-    @to_do = Todo.find_by(id: params[:id])
-    @to_do.destroy
+    to_do = Todo.find_by(id: params[:id])
+    to_do.destroy
   end
   
 end
